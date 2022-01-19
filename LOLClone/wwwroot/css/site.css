@@ -1,0 +1,191 @@
+﻿/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand {
+    white-space: normal;
+    text-align: center;
+    word-break: break-all;
+}
+
+/* Provide sufficient contrast against white background */
+a {
+    color: #0366d6;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    color: #fff;
+    background-color: #1b6ec2;
+    border-color: #1861ac;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    font-size: 14px;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+.border-top {
+    border-top: 1px solid #e5e5e5;
+}
+
+.border-bottom {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow {
+    box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy {
+    font-size: 1rem;
+    line-height: inherit;
+}
+
+/* Sticky footer styles
+-------------------------------------------------- */
+html {
+    position: relative;
+    min-height: 100%;
+    background-color: #19313E;
+    background-image: linear-gradient(to bottom, #19313E, black);
+}
+
+body {
+    /* Margin bottom by footer height */
+    margin-bottom: 60px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    white-space: nowrap;
+    line-height: 60px; /* Vertically center the text there */
+}
+
+/* Custom */
+.nav-left-header {
+    position: absolute;
+    left: 4px;
+    font-size: 12px;
+    float: left;
+    color: grey;
+}
+
+.nav-main {
+    position: absolute;
+    width: calc(100% - 10px);
+    height: calc(100% - 60px);
+    background-color: white;
+    left: 5px;
+    top: 20px;
+    margin: 0;
+}
+
+    .nav-main video {
+        object-fit: fill;
+        width: 100%;
+        height: 100%;
+    }
+
+div.logo {
+    position: absolute;
+    background-image: url("../images/logo.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 300px;
+    height: 186px;
+    top: 10px;
+    left: 70px;
+}
+
+div.panel {
+    position: absolute;
+    width: 320px;
+    height: 280px;
+    left: 60px;
+    top: 180px;
+    background-color: rgba(29,36,62,0.95);
+    background-image: linear-gradient(to bottom right, rgba(0,0,0,0.1), rgba(0,0,0,0.65));
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgba(255,255,255,0.25);
+    border-radius: 3px 3px;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.6)
+}
+
+    div.panel h6 {
+        font-family: Consolas;
+        font-size: 15px;
+        color: white;
+        font-stretch: normal;
+        font-weight: 200;
+        position: absolute;
+        top: 8px;
+    }
+
+    div.panel .line1 {
+        height: 1px;
+        position: absolute;
+        top: 18px;
+        width: 280px;
+        background: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1)), linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+        background-size: 50% 1px;
+        background-position-x: 0px, 100%;
+        background-repeat: no-repeat;
+    }
+
+.form1 {
+    width: 240px;
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+
+    .form1 input, label {
+        display: block;
+    }
+
+    .form1 input[type=text] {
+        width: 100%;
+        background: white;
+        border: none;
+        -webkit-appearance: none;
+        outline: none;  
+        
+    }
+
+        .form1 input[type=text]:focus {
+            border-style: solid;
+            border-width: 1px;
+            border-color: cornflowerblue;
+            background: white;
+            -webkit-appearance: none;
+        }
+
+        .form1 input[type=checkbox] {
+            background: white;
+            display: inline-block;
+        }
+
+        .form1 label {
+            font-size: 12px;
+            color: white;
+            height: 12px;
+        }
+
+    .form1 label[for=chkname]{
+        display:inline-block;
+    }

@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["BackgroundVideo"] = "/video/Braum-LOL.webm";
+    ViewData["BackgroundMusic"] = "/music/braum-theme.mp3";
+}
+
+<video autoplay loop muted>
+    <source src='@ViewData["BackgroundVideo"]' type="video/webm">
+</video>
+
+<audio id="musicplayer" autoplay>
+    <source src='@ViewData["BackgroundMusic"]'>
+</audio>
+
+<div class="logo"></div>
+<div class="container panel" onload="PlayMusic()">
+    <h6>Account login</h6>
+    <hr class="line1" />
+    <form class="form1">
+        <div class="">
+            <label class="">Username</label>
+            <input class="" type="text" />
+        </div>
+        <div class="" style="margin-top:8px">
+            <label class="">Password</label>
+            <input class="" type="text" />
+        </div>
+        <div class="" style="margin-top:5px">
+            <input id="chkname" name="chkname" type="checkbox" checked />
+            <label for="chkname">Remerber Username</label>
+        </div>
+    </form>
+</div>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        document.getElementById("musicplayer").play();
+    });
+</script>
